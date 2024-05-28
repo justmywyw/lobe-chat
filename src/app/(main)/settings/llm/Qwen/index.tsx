@@ -3,6 +3,8 @@
 import { Tongyi } from '@lobehub/icons';
 import { memo } from 'react';
 
+import { ModelProvider } from '@/libs/agent-runtime';
+
 import ProviderConfig from '../components/ProviderConfig';
 
 const QwenProvider = memo(() => {
@@ -10,7 +12,7 @@ const QwenProvider = memo(() => {
     <ProviderConfig
       checkModel={'qwen-turbo'}
       modelList={{ showModelFetcher: true }}
-      provider={'qwen'}
+      provider={ModelProvider.Qwen}
       title={<Tongyi.Combine size={26} type={'color'} />}
     />
   );
