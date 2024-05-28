@@ -20,6 +20,7 @@ import ZhiPuProvider from './zhipu';
 
 export const LOBE_DEFAULT_MODEL_LIST: ChatModelCard[] = [
   OpenAIProvider.chatModels,
+  QwenProvider.chatModels,
   ZhiPuProvider.chatModels,
   BedrockProvider.chatModels,
   DeepSeekProvider.chatModels,
@@ -40,6 +41,7 @@ export const LOBE_DEFAULT_MODEL_LIST: ChatModelCard[] = [
 export const DEFAULT_MODEL_PROVIDER_LIST = [
   OpenAIProvider,
   { ...AzureProvider, chatModels: [] },
+  QwenProvider,
   OllamaProvider,
   AnthropicProvider,
   DeepSeekProvider,

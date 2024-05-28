@@ -1,6 +1,9 @@
 import { ModelProviderCard } from '@/types/llm';
 
-// ref https://help.aliyun.com/zh/dashscope/developer-reference/model-introduction
+/**
+ * @date 2024-05-28
+ * https://help.aliyun.com/zh/dashscope/developer-reference/api-details
+ */
 const Qwen: ModelProviderCard = {
   chatModels: [
     {
