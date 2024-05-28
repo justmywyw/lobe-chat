@@ -8,7 +8,7 @@ import ProviderConfig from '../components/ProviderConfig';
 const QwenProvider = memo(() => {
   return (
     <ProviderConfig
-      checkModel={'qwen/qwen-turbo'}
+      checkModel={'qwen-turbo'}
       modelList={{ showModelFetcher: true }}
       provider={'qwen'}
       title={<Tongyi.Combine size={26} type={'color'} />}

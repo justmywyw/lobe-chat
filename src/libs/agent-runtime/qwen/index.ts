@@ -3,7 +3,7 @@ import { ModelProvider } from '../types';
 import { LobeOpenAICompatibleFactory } from '../utils/openaiCompatibleFactory';
 
 export const LobeQwenAI = LobeOpenAICompatibleFactory({
-  baseURL: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
+  baseURL: 'https://dashscope.aliyuncs.com/compatible-mode/v1',
   constructorOptions: {
     defaultHeaders: {
       'Content-Type': 'application/json',
