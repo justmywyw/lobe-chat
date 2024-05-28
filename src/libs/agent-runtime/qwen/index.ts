@@ -2,8 +2,8 @@ import { AgentRuntimeErrorType } from '../error';
 import { ModelProvider } from '../types';
 import { LobeOpenAICompatibleFactory } from '../utils/openaiCompatibleFactory';
 
-export const LobeOpenAI = LobeOpenAICompatibleFactory({
-  baseURL: 'https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation',
+export const LobeQwenAI = LobeOpenAICompatibleFactory({
+  baseURL: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
   constructorOptions: {
     defaultHeaders: {
       'Content-Type': 'application/json',
