@@ -11,7 +11,7 @@ const Qwen: ModelProviderCard = {
       displayName: 'Qwen Turbo',
       enabled: true,
       id: 'qwen-turbo',
-      tokens: 6144,
+      tokens: 8192,
     },
     {
       description: '通义千问超大规模语言模型增强版，支持中文、英文等不同语言输入。',
@@ -26,7 +26,7 @@ const Qwen: ModelProviderCard = {
       displayName: 'Qwen Max',
       enabled: true,
       id: 'qwen-max',
-      tokens: 6144,
+      tokens: 8192,
     },
   ],
   id: 'qwen',
