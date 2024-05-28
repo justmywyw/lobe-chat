@@ -35,7 +35,6 @@ export const LOBE_DEFAULT_MODEL_LIST: ChatModelCard[] = [
   PerplexityProvider.chatModels,
   AnthropicProvider.chatModels,
   ZeroOneProvider.chatModels,
-  QwenProvider.chatModels,
 ].flat();
 
 export const DEFAULT_MODEL_PROVIDER_LIST = [
@@ -56,7 +55,6 @@ export const DEFAULT_MODEL_PROVIDER_LIST = [
   MoonshotProvider,
   ZeroOneProvider,
   ZhiPuProvider,
-  QwenProvider,
 ];
 
 export const filterEnabledModels = (provider: ModelProviderCard) => {
