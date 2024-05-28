@@ -5,7 +5,7 @@ import { memo } from 'react';
 
 import ProviderConfig from '../components/ProviderConfig';
 
-const TogetherAIProvider = memo(() => {
+const QwenProvider = memo(() => {
   return (
     <ProviderConfig
       checkModel={'qwen/qwen-turbo'}
@@ -16,4 +16,4 @@ const TogetherAIProvider = memo(() => {
   );
 });
 
-export default TogetherAIProvider;
+export default QwenProvider;
