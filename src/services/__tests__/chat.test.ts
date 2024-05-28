@@ -8,15 +8,16 @@ import {
   LobeAnthropicAI,
   LobeAzureOpenAI,
   LobeBedrockAI,
+  LobeDeepSeekAI,
   LobeGoogleAI,
   LobeGroq,
-  LobeDeepSeekAI,
   LobeMistralAI,
   LobeMoonshotAI,
   LobeOllamaAI,
   LobeOpenAI,
   LobeOpenRouterAI,
   LobePerplexityAI,
+  LobeQwenAI,
   LobeTogetherAI,
   LobeZeroOneAI,
   LobeZhipuAI,
@@ -887,6 +888,21 @@ describe('AgentRuntimeOnClient', () => {
         const runtime = await initializeWithClientStore(ModelProvider.DeepSeek, {});
         expect(runtime).toBeInstanceOf(AgentRuntime);
         expect(runtime['_runtime']).toBeInstanceOf(LobeDeepSeekAI);
+      });
+
+      it('Qwen provider: with apiKey', async () => {
+        merge(initialSettingsState, {
+          settings: {
+            keyVaults: {
+              qwen: {
+                apiKey: 'user-qwen-key',
+              },
+            },
+          },
+        } as UserSettingsState) as unknown as UserStore;
+        const runtime = await initializeWithClientStore(ModelProvider.Qwen, {});
+        expect(runtime).toBeInstanceOf(AgentRuntime);
+        expect(runtime['_runtime']).toBeInstanceOf(LobeQwenAI);
       });
 
       /**
