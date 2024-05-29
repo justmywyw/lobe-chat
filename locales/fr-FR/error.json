@@ -102,7 +102,7 @@
     "PluginSettingsInvalid": "Ce plugin doit être correctement configuré avant de pouvoir être utilisé. Veuillez vérifier votre configuration",
     "QwenBizError": "Erreur lors de la demande de service Qwen, veuillez vérifier les informations ci-dessous ou réessayer",
     "TogetherAIBizError": "Erreur commerciale lors de la demande de service TogetherAI AI. Veuillez vérifier les informations ci-dessous ou réessayer.",
-    "ZeroOneBizError": "Erreur lors de la demande de service ZeroOne, veuillez vérifier les informations ci-dessous ou réessayer",
+    "ZeroOneBizError": "请求零一万物服务出错，请根据以下信息排查或重试",
     "ZhipuBizError": "Erreur lors de la demande de service Zhipu, veuillez vérifier les informations ci-dessous ou réessayer"
   },
   "stt": {
