@@ -13,7 +13,7 @@ const QwenProvider = memo(() => {
       checkModel={'qwen-turbo'}
       modelList={{ showModelFetcher: true }}
       provider={ModelProvider.Qwen}
-      title={<Tongyi.Combine size={26} type={'color'} />}
+      title={<Tongyi.Combine extra={'千问'} size={26} type={'color'} />}
     />
   );
 });
