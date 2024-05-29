@@ -10,7 +10,6 @@ const Qwen: ModelProviderCard = {
       description: '通义千问超大规模语言模型，支持中文、英文等不同语言输入。',
       displayName: 'Qwen Turbo',
       enabled: true,
-      functionCall: true,
       id: 'qwen-turbo',
       tokens: 8192,
     },
