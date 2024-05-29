@@ -186,8 +186,8 @@ export const getLLMConfig = () => {
       OLLAMA_PROXY_URL: process.env.OLLAMA_PROXY_URL || '',
       OLLAMA_MODEL_LIST: process.env.OLLAMA_MODEL_LIST || process.env.OLLAMA_CUSTOM_MODELS,
 
-      ENABLED_QWEN: !!process.env.DASHSCOPE_API_KEY,
-      QWEN_API_KEY: process.env.DASHSCOPE_API_KEY,
+      ENABLED_QWEN: !!process.env.QWEN_API_KEY,
+      QWEN_API_KEY: process.env.QWEN_API_KEY,
     },
   });
 };
